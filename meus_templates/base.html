@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -81,17 +83,17 @@
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/">
-                            <img src="../img/facebook.png" alt="Facebook">
+                            <img src='{% static "facebook.png" %}' alt="Facebook">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/">
-                            <img src="../img/instagram.png" alt="Instagram">
+                            <img src='{% static "instagram.png" %}' alt="Instagram">
                         </a>
                     </li>
                     <li>
                         <a href="https://goo.gl/gCSVLh">
-                            <img src="../img/whatsapp.png" alt="Whatsapp">
+                            <img src='{% static "whatsapp.png" %}' alt="Whatsapp">
                         </a>
                     </li>
                 </ul>

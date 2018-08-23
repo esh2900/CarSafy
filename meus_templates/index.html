@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block main %}
 
 	<header>
-		<img src="../img/Logo.png" alt= "Logo CarSafy" id="logo">
 		<nav>
 			<ul>
-				<li><a href="outros-seguros.html">Outros Seguros</a></li>
-				<li><a href="perguntas.html">Perguntas Frequentes</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="">Outros Seguros</a></li>
+				<li><a href="faq">Perguntas Frequentes</a></li>
+				<li><a href="contato">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -16,7 +17,7 @@
 		<h1>Faça a cotação do seu veículo</h1>
 		<section id="capa">
 			<div>
-				<img src="../img/banner.jpg" alt="Banner do site" id="banner" width="100%">
+				<img src='{% static "banner.jpg" %}' alt="Banner do site" id="banner" width="100%">
 				<button>Fazer cotação</button>
 			</div>
 		</section>
@@ -29,7 +30,7 @@
 				<ul>
 					<li>
 						<div>
-							<img src="../img/app.svg" alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
+							<img src='{% static "app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Acidente Pessoal de Passageiros</p>
@@ -37,7 +38,7 @@
 					</li>
 					<li>
 						<div>
-							<img src="../img/alagamento.svg" alt="Alagamento" width="150px" height="150px">
+							<img src='{% static "alagamento.svg" %}' alt="Alagamento" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Alagamento</p>
@@ -45,7 +46,7 @@
 					</li>
 					<li>
 						<div>
-							<img src="../img/pt.svg" alt="Perca Total" width="150px" height="150px">
+							<img src='{% static "pt.svg"%}' alt="Perca Total" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Perca Total</p>
@@ -53,7 +54,7 @@
 					</li>
 					<li>
 						<div>
-							<img src="../img/dc.svg" alt="Danos Corporais a Terceiros" width="150px" height="150px">
+							<img src='{% static "dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Danos Corporais a Terceiros</p>
@@ -66,7 +67,7 @@
 				<ul>
 					<li>
 						<div>
-							<img src="../img/carro-reserva.svg" alt="Carro Reserva" width="150px" height="150px">
+							<img src='{% static "carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Carro Reserva</p>
@@ -74,7 +75,7 @@
 					</li>
 					<li>
 						<div>
-							<img src="../img/chaveiro.svg" alt="Chaveiro" width="150px" height="150px">
+							<img src='{% static "chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
 						</div>
 						<div>
 							<p>Chaveiro</p>
@@ -93,7 +94,7 @@
 				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
 			</div>
 			<div>
-				<img src="../img/carro-protegido.jpg" alt="Porque fazer seguro auto">
+				<img src='{% static "carro-protegido.jpg"%}' alt="Porque fazer seguro auto">
 			</div>
 		</section>
 
