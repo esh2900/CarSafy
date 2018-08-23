@@ -6,3 +6,6 @@ def perguntas_frequentes(request):
 
 def contato (request):
     return render(request, "contato.html")
+
+def cotacao (request):
+    return render(request, "cotacao.html")
