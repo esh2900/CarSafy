@@ -14,90 +14,127 @@
 					<div class="nav-wrapper teal darken-1">
 						
 						<img style="padding-left: 20px" src='{% static "logo.png" %}' alt="Logo" width="240px">
-
-						<ul class="right">
+						<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
 							<li><a href=""><i class="material-icons left">add_circle_outline</i>Outros Seguros</a></li>				
 							<li><a href="faq"><i class="material-icons left">help_outline</i>Perguntas Frequentes</a></li>
 							<li><a href="contato"><i class="material-icons left">mail_outline</i>Contato</a></li>
 						</ul>
 					</div>
 				</nav>
+				<ul class="sidenav right" id="mobile-demo">
+					<li><a href=""><i class="material-icons left">add_circle_outline</i>Outros Seguros</a></li>				
+					<li><a href="faq"><i class="material-icons left">help_outline</i>Perguntas Frequentes</a></li>
+					<li><a href="contato"><i class="material-icons left">mail_outline</i>Contato</a></li>
+				</ul>
 		</div>
 
 	</header>
 	<main>
-		<h1>Faça a cotação do seu veículo</h1>
-		<section id="capa">
-			<div>
-				<img src='{% static "banner.jpg" %}' alt="Banner do site" id="banner" width="100%">
-				<button ><a href="cotacao"> Fazer cotação </a></button>
-			</div>
-		</section>
 
-		<br> <hr> <br>
+		<div class="blue lighten-4" style="height:91vh">
+		
+			<button ><a href="cotacao"> Fazer cotação </a></button>
+			<h1>Faça a cotação do seu veículo</h1>	
+
+		</div>
 		<!--Seção de coberturas-->
-		<section>
-			<div>
-				<h2>Coberturas básicas</h2>
-				<ul>
-					<li>
-						<div>
-							<img src='{% static "app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
+		<div style="height:100vh">
+				
+				<h2 class="center-align">Coberturas básicas</h2>
+				<div class="row">		
+					<div class="col 3">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src='{% static "app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
+							</div>
+							<div class="card-content">
+								<span class="card-content activator grey-text text-darken-4">Acidente Pessoal de Passageiros<i class="material-icons right">more_vert</i></span>		
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Acidente Pessoal de Passageiros<i class="material-icons right">close</i></span>
+								<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							</div>
 						</div>
-						<div>
-							<p>Acidente Pessoal de Passageiros</p>
+					</div>
+					<div class="col 3">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img src='{% static "alagamento.svg" %}' alt="Alagamento" width="150px" height="150px">
+							</div>
+							<div class="card-content">
+								<span class="card-content activator grey-text text-darken-4">Alagamento<i class="material-icons right">more_vert</i></span>		
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Alagamento<i class="material-icons right">close</i></span>
+								<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							</div>
 						</div>
-					</li>
-					<li>
-						<div>
-							<img src='{% static "alagamento.svg" %}' alt="Alagamento" width="150px" height="150px">
-						</div>
-						<div>
-							<p>Alagamento</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src='{% static "pt.svg"%}' alt="Perca Total" width="150px" height="150px">
-						</div>
-						<div>
-							<p>Perca Total</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src='{% static "dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">
-						</div>
-						<div>
-							<p>Danos Corporais a Terceiros</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h2>Coberturas adicionais</h2>
-				<ul>
-					<li>
-						<div>
-							<img src='{% static "carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
-						</div>
-						<div>
-							<p>Carro Reserva</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src='{% static "chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
-						</div>
-						<div>
-							<p>Chaveiro</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+					</div>
 
-		<br><hr><br>
+					<div class="col 3">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img src='{% static "pt.svg"%}' alt="Perca Total" width="150px" height="150px">										</div>
+							<div class="card-content">
+								<span class="card-content activator grey-text text-darken-4">Perca Total<i class="material-icons right">more_vert</i></span>		
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Perca Total<i class="material-icons right">close</i></span>
+								<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col 3">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img src='{% static "dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">										</div>
+							<div class="card-content">
+								<span class="card-content activator grey-text text-darken-4">Danos Corporais a Terceiros<i class="material-icons right">more_vert</i></span>		
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Danos Corporais a Terceiros<i class="material-icons right">close</i></span>
+								<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div>
+					<h2 class="center-align">Coberturas adicionais</h2>
+					<div class="row">		
+							<div class="col 6">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img src='{% static "carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
+									</div>
+									<div class="card-content">
+										<span class="card-content activator grey-text text-darken-4">Carro Reserva<i class="material-icons right">more_vert</i></span>		
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Carro Reserva<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col 3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img src='{% static "chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
+									</div>
+									<div class="card-content">
+										<span class="card-content activator grey-text text-darken-4">Chaveiro<i class="material-icons right">more_vert</i></span>		
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Chaveiro<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</div>			
+		</div>
 
 		<!--Texto sobre informações-->
 		<section>
