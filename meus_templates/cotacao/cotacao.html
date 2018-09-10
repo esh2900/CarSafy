@@ -34,7 +34,7 @@
 		})();
 	</script>
 	
-	<form action="" method="POST">
+	<form action="{% url 'cotacao_dados_pessoais_cadastro'%}" method="POST">
 		{% csrf_token %}
 	
 		{{form.as_p}}
