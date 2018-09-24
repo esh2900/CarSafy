@@ -128,5 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'meus_statics',
+    'core/statics',
 ]
